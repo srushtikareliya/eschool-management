@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import Header from './components/Header';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import Dashboard from './components/Dashboard';
 import VerifyOtp from './components/auth/VerifyOtp';
+import ForgotPassword from './components/auth/ForgotPassword';
+import Dashboard from './components/Dashboard';
 
 function LayoutWrapper({ children }) {
   const location = useLocation();
@@ -30,6 +31,7 @@ function App() {
             <Route path="/" element={<Login />}></Route>
             <Route path="/register" element={<Register />}></Route>
             <Route path="/verify-otp" element={<VerifyOtp />}></Route>
+            <Route path="/forgot-password" element={<ForgotPassword />}></Route>
             <Route path="/dashboard" element={<Dashboard />}></Route>
           </Routes>
         </LayoutWrapper>
