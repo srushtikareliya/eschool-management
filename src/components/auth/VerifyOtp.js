@@ -1,12 +1,12 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import CommonAuthLayout from './CommonAuthLayout'
 
 function VerifyOtp() {
-  return (
-    <>
-        <CommonAuthLayout>
-            <div class="card auth-card">
+    return (
+        <>
+            <CommonAuthLayout>
+                <div class="card auth-card">
                     <div class="card-body p-0 bg-black auth-header-box rounded-top">
                         <div class="text-center p-3">
                             <Link to="/" class="logo logo-admin">
@@ -33,9 +33,9 @@ function VerifyOtp() {
                         </form>
                     </div>
                 </div>
-        </CommonAuthLayout>
-    </>
-  )
+            </CommonAuthLayout>
+        </>
+    )
 }
 
 export default VerifyOtp
