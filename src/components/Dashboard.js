@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Dashboard() {
     return (
@@ -12,7 +13,7 @@ function Dashboard() {
                                     <h4 class="page-title">Dashboard</h4>
                                     <div class="">
                                         <ol class="breadcrumb mb-0">
-                                            <li class="breadcrumb-item"><a href="#">Mount</a></li>
+                                            <li class="breadcrumb-item"><Link to="/">Mount</Link></li>
                                             <li class="breadcrumb-item active">Dashboard</li>
                                         </ol>
                                     </div>
