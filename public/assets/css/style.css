@@ -1,3 +1,12 @@
 .auth-card{
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e6e6e6;
+}
+.input-search{
+    width: 300px;
+}
+.input-search .input-serach-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }

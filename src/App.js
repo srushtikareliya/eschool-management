@@ -6,7 +6,9 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import VerifyOtp from './components/auth/VerifyOtp';
 import ForgotPassword from './components/auth/ForgotPassword';
+import ResetPassword from './components/auth/ResetPassword';
 import Dashboard from './components/Dashboard';
+import StudentList from './components/students/List';
 
 function LayoutWrapper({ children }) {
   const location = useLocation();
@@ -32,7 +34,9 @@ function App() {
             <Route path="/register" element={<Register />}></Route>
             <Route path="/verify-otp" element={<VerifyOtp />}></Route>
             <Route path="/forgot-password" element={<ForgotPassword />}></Route>
+            <Route path="/reset-password" element={<ResetPassword />}></Route>
             <Route path="/dashboard" element={<Dashboard />}></Route>
+            <Route path="/students/list" element={<StudentList />}></Route>
           </Routes>
         </LayoutWrapper>
       </Router>

@@ -5,30 +5,26 @@ function ForgotPassword() {
   return (
     <>
         <CommonAuthLayout>
-            <div class="card auth-card">
-                    <div class="card-body p-0 bg-black auth-header-box rounded-top">
-                        <div class="text-center p-3">
-                            <Link to="/" class="logo logo-admin">
-                                <img src="assets/images/logo-sm.png" height="50" alt="logo" class="auth-logo"></img>
+            <div className="card auth-card">
+                    <div className="card-body p-0 bg-black auth-header-box rounded-top">
+                        <div className="text-center p-3">
+                            <Link to="/" className="logo logo-admin">
+                                <img src="assets/images/logo-sm.png" height="50" alt="logo" className="auth-logo"></img>
                             </Link>
-                            <h4 class="mt-3 mb-1 fw-semibold text-white fs-18">Let's Get Started Mount</h4>
-                            <p class="text-muted fw-medium mb-0">Sign in to continue to Mount.</p>
+                            <h4 className="mt-3 mb-1 fw-semibold text-white fs-18">Forgot Password</h4>
+                            <p className="text-muted fw-medium mb-0">Enter your email for verify your account.</p>
                         </div>
                     </div>
-                    <div class="card-body pt-0">
-                        <form class="my-3" action="#">
-                            <div class="form-group mb-2">
-                                <label class="form-label" for="newPassword">Password</label>
-                                <input type="password" class="form-control" id="newPassword" name="newPassword" placeholder="Enter new password" />
+                    <div className="card-body pt-0">
+                        <form className="my-3" action="#">
+                            <div className="form-group mb-2">
+                                <label className="form-label" for="newPassword">Email</label>
+                                <input type="email" className="form-control" id="email" name="email" placeholder="Enter email" />
                             </div>
-                            <div class="form-group mb-2">
-                                <label class="form-label" for="confirmNewPassword">Re-enter New Password</label>
-                                <input type="password" class="form-control" id="confirmNewPassword" name="confirmNewPassword" placeholder="Re-enter password" />
-                            </div>
-                            <div class="form-group mb-0 row">
-                                <div class="col-12">
-                                    <div class="d-grid mt-3">
-                                        <button class="btn btn-primary">Submit <i class="fa fa-sign-in-alt ms-1"></i></button>
+                            <div className="form-group mb-0 row">
+                                <div className="col-12">
+                                    <div className="d-grid mt-3">
+                                        <Link className="btn btn-primary" to="/reset-password">Send Email <i className="fa fa-sign-in-alt ms-1"></i></Link>
                                     </div>
                                 </div>
                             </div>
